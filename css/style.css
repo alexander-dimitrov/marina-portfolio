@@ -1,0 +1,21 @@
+/* Marina Dimitrova Portfolio - Main Stylesheet */
+
+/* 1. Base Styles */
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+
+/* 2. Layout */
+@import 'layout/grid.css';
+@import 'layout/sections.css';
+
+/* 3. Components */
+@import 'components/navigation.css';
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/modal.css';
+
+/* 4. Utilities */
+@import 'utilities/helpers.css';
+
+/* Note: Files will be created in subsequent phases */
