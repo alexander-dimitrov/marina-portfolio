@@ -427,6 +427,8 @@ em, i {
 ---
 
 #### P1-T4: Create Utility Helper Classes
+**Status:** ✅ Completed (2026-01-14)
+**PR:** #8
 **Effort:** S
 **File Target:** `css/utilities/helpers.css`
 **Dependencies:** P1-T2
@@ -444,11 +446,11 @@ Copy utility classes from CLAUDE.md lines 1200-1266, including:
 - Reduced motion media query
 
 **Acceptance Criteria:**
-- [ ] File exists at `css/utilities/helpers.css`
-- [ ] Container classes defined (.container, .container--wide)
-- [ ] Accessibility classes (.visually-hidden, .skip-link)
-- [ ] Prefers-reduced-motion media query included
-- [ ] No syntax errors
+- [x] File exists at `css/utilities/helpers.css`
+- [x] Container classes defined (.container, .container--wide)
+- [x] Accessibility classes (.visually-hidden, .skip-link)
+- [x] Prefers-reduced-motion media query included
+- [x] No syntax errors
 
 **Validation (HITL):**
 - Test .visually-hidden with screen reader
