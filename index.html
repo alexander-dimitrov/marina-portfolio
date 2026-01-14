@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marina Dimitrova | Diseñadora Gráfica y Multimedia</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio de Marina Dimitrova - Diseñadora gráfica y estudiante de Artes Digitales y Multimedia. Diseño editorial, branding, logos y fotografía.">
+  <meta name="keywords" content="diseño gráfico, portfolio, multimedia, artes digitales, diseñadora, Madrid, España">
+  <meta name="author" content="Marina Dimitrova">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marina Dimitrova | Portfolio">
+  <meta property="og:description" content="Diseño que conecta. Multimedia y Artes digitales.">
+  <meta property="og:type" content="website">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- SECTION 1: HERO -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="hero__background">
+      <img src="images/backgrounds/fondo.png" alt="" class="hero__bg-image" aria-hidden="true">
+    </div>
+
+    <div class="hero__content">
+      <h1 id="hero-title" class="hero__title">
+        Marina<br>Dimitrova
+      </h1>
+      <p class="hero__subtitle">
+        Diseño que conecta.<br>
+        Multimedia y Artes digitales
+      </p>
+      <a href="#about" class="btn btn--primary hero__cta" aria-label="Explorar mi trabajo">
+        Explora mi trabajo
+      </a>
+    </div>
+  </section>
+
+  <!-- NAVIGATION (appears after hero) -->
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-section="about">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects-modal" class="nav__link" data-modal="projects">Proyectos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link" data-section="contact">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+
+          <!-- Left Column: Text Content -->
+          <div class="about__content">
+            <h2 id="about-title" class="about__title">Sobre Mí</h2>
+
+            <div class="about__text">
+              <p>Soy Marina Dimitrova, diseñadora gráfica y estudiante de Artes Digitales y Multimedia. Mi trabajo nace del equilibrio entre lo conceptual y lo emocional, entre la narrativa visual y la estética simbólica.</p>
+
+              <p>Diseño para contar historias. Cada proyecto es una extensión de lo que observo, lo que siento y lo que quiero provocar. Me inspiran los silencios que hablan, los gestos que no necesitan palabras y los símbolos que perduran. Trabajo con sensibilidad editorial, explorando el poder de lo visual para conectar con las personas. Me interesa lo imperfecto, lo que deja huella, lo que construye identidad desde lo sutil.</p>
+
+              <p>Este portfolio es un mapa de mi universo creativo: ahí donde las formas dialogan con las ideas y cada trazo lleva intención.</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile & Skills -->
+          <aside class="about__sidebar">
+            <div class="profile">
+              <div class="profile__image-wrapper">
+                <img src="images/backgrounds/circulo-rojo.png" alt="" class="profile__frame" aria-hidden="true">
+                <img src="images/profile/fotomia.jpg" alt="Marina Dimitrova" class="profile__photo">
+              </div>
+
+              <div class="skills">
+                <!-- Software Skills -->
+                <div class="skills__group">
+                  <h3 class="skills__title">Software</h3>
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <img src="images/icons/ai.png" alt="" class="skills__icon" aria-hidden="true">
+                      <span>Adobe Illustrator</span>
+                    </li>
+                    <li class="skills__item">
+                      <img src="images/icons/ps.png" alt="" class="skills__icon" aria-hidden="true">
+                      <span>Adobe Photoshop</span>
+                    </li>
+                    <li class="skills__item">
+                      <img src="images/icons/id.png" alt="" class="skills__icon" aria-hidden="true">
+                      <span>Adobe InDesign</span>
+                    </li>
+                    <li class="skills__item">
+                      <img src="images/icons/figma.png" alt="" class="skills__icon" aria-hidden="true">
+                      <span>Figma</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Language Skills -->
+                <div class="skills__group">
+                  <h3 class="skills__title">Languages</h3>
+                  <ul class="skills__list skills__list--text">
+                    <li class="skills__item">Español B2</li>
+                    <li class="skills__item">Ingles B2</li>
+                    <li class="skills__item">Búlgaro C1</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EDITORIAL GALLERY (hidden by default, shown when category selected) -->
+    <section id="editorial" class="gallery gallery--editorial" aria-labelledby="editorial-title" hidden>
+      <div class="container container--wide">
+        <div class="gallery__header">
+          <h2 id="editorial-title" class="gallery__title">Editorial</h2>
+          <button class="btn-back" aria-label="Volver al menú de proyectos" data-back="projects">
+            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__scroll">
+          <div class="gallery__grid">
+
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img src="images/projects/IMG1.jpg" alt="Revista de Arte" class="card__image" loading="lazy">
+              </div>
+              <h3 class="card__title">Revista de Arte</h3>
+            </article>
+
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img src="images/projects/IMG2.jpg" alt="Revista de Filofofía" class="card__image" loading="lazy">
+              </div>
+              <h3 class="card__title">Revista de Filofofía</h3>
+            </article>
+
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img src="images/projects/IMG3.jpg" alt="Cartel de Serie" class="card__image" loading="lazy">
+              </div>
+              <h3 class="card__title">Cartel de Serie</h3>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="contact__background">
+        <img src="images/backgrounds/fondo.png" alt="" class="contact__bg-image" aria-hidden="true">
+      </div>
+
+      <div class="container">
+        <div class="contact__content">
+          <h2 id="contact-title" class="contact__title">Contactame</h2>
+
+          <address class="contact__info">
+            <div class="contact__item">
+              <span class="contact__label">Email:</span>
+              <a href="mailto:Aniramad05@gmail.com" class="contact__link">
+                Aniramad05@gmail.com
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__label">LinkedIn:</span>
+              <a href="https://www.linkedin.com/in/marina-dimitrova-328b88291"
+                 class="contact__link"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                www.linkedin.com/in/marina-dimitrova-328b88291
+              </a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__label">Number:</span>
+              <a href="tel:+34656694180" class="contact__link">
+                (+34) 656 694 180
+              </a>
+            </div>
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: PROJECTS MENU -->
+  <div id="projects-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Cerrar menú de proyectos" data-close-modal>
+        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32">
+          <path d="M24 8L8 24M8 8L24 24" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+
+      <nav class="modal__nav" aria-label="Categorías de proyectos">
+        <h2 id="modal-title" class="visually-hidden">Proyectos</h2>
+        <ul class="modal__menu">
+          <li class="modal__menu-item">
+            <a href="#logos" class="modal__menu-link" data-category="logos">Logos</a>
+          </li>
+          <li class="modal__menu-item">
+            <a href="#branding" class="modal__menu-link" data-category="branding">Branding y Publicidad</a>
+          </li>
+          <li class="modal__menu-item">
+            <a href="#editorial" class="modal__menu-link" data-category="editorial">Editorial</a>
+          </li>
+          <li class="modal__menu-item">
+            <a href="#fotografia" class="modal__menu-link" data-category="fotografia">Fotografía</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
