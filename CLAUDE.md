@@ -1595,6 +1595,33 @@ git pull origin main
 
 # Delete local branch (already deleted on remote)
 git branch -d P1-T2-css-reset
+```
+
+#### 9. Update Task Status in DEVELOPMENT-PLAN.md
+
+After successfully merging each PR, update the task status in DEVELOPMENT-PLAN.md:
+
+- Change task status from pending to completed
+- Add completion timestamp
+- Note any deviations or important decisions
+- This creates an audit trail of project progress
+
+**Example update:**
+```markdown
+#### P1-T2: Create CSS Reset
+**Status:** ✅ Completed (2026-01-14)
+**PR:** #2
+**Effort:** S
+...
+```
+
+Then commit the documentation update:
+
+```bash
+# Update DEVELOPMENT-PLAN.md with task completion
+git add DEVELOPMENT-PLAN.md
+git commit -m "docs: Mark P1-T2 as completed in development plan"
+git push origin main
 
 # Continue to next task...
 ```
