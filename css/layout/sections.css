@@ -114,14 +114,20 @@
 
 /* Skills Section */
 .skills {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-2xl);
   margin-top: var(--space-xl);
 }
 
 .skills__group {
   /* Each skill group */
+}
+
+@media (max-width: 768px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills__title {
@@ -165,8 +171,8 @@
 /* Profile Image with Circular Frame */
 .profile__image-wrapper {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin: 0 auto var(--space-xl);
 }
 
@@ -192,7 +198,7 @@
 
 @media (max-width: 768px) {
   .profile__image-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
 }
