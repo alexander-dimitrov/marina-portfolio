@@ -222,6 +222,8 @@ build/
 ### Tasks
 
 #### P1-T1: Create CSS Reset
+**Status:** ✅ Completed (2026-01-14)
+**PR:** #3
 **Effort:** S
 **File Target:** `css/base/reset.css`
 **Dependencies:** P0-T1
