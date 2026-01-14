@@ -296,6 +296,8 @@ button {
 ---
 
 #### P1-T2: Create CSS Custom Properties (Design Tokens)
+**Status:** ✅ Completed (2026-01-14)
+**PR:** #4
 **Effort:** M
 **File Target:** `css/base/variables.css`
 **Dependencies:** P0-T1
