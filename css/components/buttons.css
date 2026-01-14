@@ -1,0 +1,57 @@
+/* Button Components */
+
+.btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-2xl);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-xl);
+  background-color: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-base),
+              color var(--transition-base),
+              transform var(--transition-fast);
+
+  /* Accessibility */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn--primary {
+  /* Default style already applied */
+}
+
+.btn-back {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-text-inverse);
+  cursor: pointer;
+  transition: background-color var(--transition-base),
+              transform var(--transition-fast);
+}
+
+.btn-back:hover,
+.btn-back:focus {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.1);
+}
