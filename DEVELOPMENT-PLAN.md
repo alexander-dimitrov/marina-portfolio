@@ -584,6 +584,8 @@ Copy the full HTML skeleton from CLAUDE.md lines 340-583.
 ### Tasks
 
 #### P2-T1: Create Grid System
+**Status:** ✅ Completed (2026-01-14)
+**PR:** #9
 **Effort:** S
 **File Target:** `css/layout/grid.css`
 **Dependencies:** P1-T2
