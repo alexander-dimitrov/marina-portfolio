@@ -1,8 +1,10 @@
 /* Navigation Component */
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: var(--z-sticky);
   background-color: var(--color-primary);
   box-shadow: var(--shadow-sm);
