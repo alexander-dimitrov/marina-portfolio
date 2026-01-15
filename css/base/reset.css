@@ -17,6 +17,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Add spacing for fixed header when visible */
+main {
+  /* Hero section starts at top, other sections need clearance */
+}
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;

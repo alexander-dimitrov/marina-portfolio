@@ -59,12 +59,15 @@
    =================================== */
 
 .about {
-  padding-top: calc(var(--space-2xl) + 60px); /* 48px + 60px nav height */
+  padding-top: var(--space-2xl); /* 48px top */
   padding-bottom: var(--space-2xl); /* 48px bottom */
   background-color: var(--color-bg-cream);
   min-height: calc(100vh - 60px); /* Fit in viewport minus nav height */
   display: flex;
   align-items: center;
+  margin-top: -60px; /* Pull up to overlap/hide hero background peek */
+  position: relative;
+  z-index: 50; /* Above hero (z-index: 1) and below nav (z-index: 200) */
 }
 
 .about__grid {
