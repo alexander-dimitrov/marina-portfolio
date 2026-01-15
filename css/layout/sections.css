@@ -66,6 +66,19 @@
   min-height: calc(100vh - 60px); /* Fit in viewport minus nav height */
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+/* Cover any hero background bleed with pseudo-element */
+.about::before {
+  content: '';
+  position: absolute;
+  top: -60px; /* Extend 60px upward (nav height) */
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--color-bg-cream);
+  z-index: -1; /* Behind about content but will cover hero bg */
 }
 
 .about__grid {
