@@ -12,13 +12,22 @@ export function initNavigation() {
   // Show/hide header and highlight active section
   function handleScroll() {
     const currentScrollY = window.pageYOffset;
+    const threshold = heroHeight * 0.8;
+
+    console.log('Scroll check:', {
+      currentScrollY,
+      heroHeight,
+      threshold,
+      shouldShow: currentScrollY > threshold
+    });
 
     // Show header after scrolling past hero
-    if (currentScrollY > heroHeight * 0.8) {
+    if (currentScrollY > threshold) {
       header.classList.add('header--visible');
-      console.log('Header should be visible now', currentScrollY, heroHeight);
+      console.log('✅ Header VISIBLE - class added');
     } else {
       header.classList.remove('header--visible');
+      console.log('❌ Header HIDDEN - class removed');
     }
 
     // Highlight active section in navigation
