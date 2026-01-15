@@ -11,6 +11,7 @@
   place-items: center;
   overflow: hidden;
   background-color: var(--color-bg-cream);
+  border-bottom: 60px solid var(--color-bg-cream); /* Solid barrier to prevent bg bleed */
 }
 
 .hero__background {
@@ -65,9 +66,6 @@
   min-height: calc(100vh - 60px); /* Fit in viewport minus nav height */
   display: flex;
   align-items: center;
-  margin-top: -60px; /* Pull up to overlap/hide hero background peek */
-  position: relative;
-  z-index: 50; /* Above hero (z-index: 1) and below nav (z-index: 200) */
 }
 
 .about__grid {
