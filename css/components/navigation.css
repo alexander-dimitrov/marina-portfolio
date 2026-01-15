@@ -7,7 +7,7 @@
   right: 0;
   z-index: var(--z-sticky);
   background-color: var(--color-primary);
-  box-shadow: var(--shadow-sm);
+  /* Removed box-shadow to prevent visual bleed below nav */
 
   /* Initially hidden, shown after scrolling past hero */
   transform: translateY(-100%);

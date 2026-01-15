@@ -59,14 +59,17 @@
    =================================== */
 
 .about {
-  padding: var(--section-padding) 0;
+  padding: var(--space-2xl) 0; /* 48px top/bottom for tighter fit */
   background-color: var(--color-bg-cream);
+  min-height: calc(100vh - 60px); /* Fit in viewport minus nav height */
+  display: flex;
+  align-items: center;
 }
 
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-4xl);
+  gap: var(--space-2xl); /* Reduced to 48px for tighter layout */
   align-items: stretch; /* Make both columns equal height */
 }
 
@@ -100,7 +103,7 @@
   font-family: var(--font-heading);
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md); /* 24px - tighter spacing */
   color: var(--color-text-primary);
 }
 
@@ -116,7 +119,7 @@
 }
 
 .about__text p {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm); /* 16px - tighter paragraph spacing */
 }
 
 .about__text p:last-child {
@@ -127,8 +130,8 @@
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-2xl);
-  margin-top: var(--space-xl);
+  gap: var(--space-sm); /* 16px - compact gap between Software/Languages */
+  margin-top: var(--space-sm); /* 16px - tight margin from photo */
 }
 
 .skills__group {
@@ -143,17 +146,19 @@
 
 .skills__title {
   font-family: var(--font-heading);
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-body);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xs); /* 8px - very tight */
   text-align: center;
   color: var(--color-text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* Add letter-spacing for prominence */
 }
 
 .skills__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-xs); /* 8px - very compact icon grid */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -168,23 +173,23 @@
 }
 
 .skills__icon {
-  width: 64px;
-  height: 64px;
+  width: 40px; /* Compact icon size to match design */
+  height: 40px;
   object-fit: contain;
 }
 
 .skills__list--text .skills__item {
   font-family: var(--font-body);
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-small); /* Reduced from body */
   color: var(--color-text-secondary);
 }
 
 /* Profile Image with Circular Frame */
 .profile__image-wrapper {
   position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto var(--space-xl);
+  width: 280px; /* Compact size to match design */
+  height: 280px;
+  margin: 0 auto var(--space-sm); /* 16px - tight margin below photo */
 }
 
 .profile__frame {
