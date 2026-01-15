@@ -286,3 +286,84 @@
     font-size: var(--font-size-body);
   }
 }
+
+/* ===================================
+   GALLERY SECTION
+   =================================== */
+
+.gallery {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-bg-cream);
+}
+
+.gallery__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.gallery__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.gallery__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+.gallery__scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery__scroll::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.gallery__scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+.gallery__grid {
+  display: flex;
+  gap: var(--space-xl);
+  padding-bottom: var(--space-md);
+
+  /* Optional: Snap scrolling for better UX */
+  scroll-snap-type: x mandatory;
+}
+
+.gallery__grid .card {
+  flex: 0 0 auto;
+  width: min(380px, 85vw);
+  scroll-snap-align: start;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .gallery__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .gallery__grid {
+    gap: var(--space-lg);
+  }
+
+  .gallery__grid .card {
+    width: min(320px, 85vw);
+  }
+}
