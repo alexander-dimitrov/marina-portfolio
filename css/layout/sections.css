@@ -67,7 +67,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4xl);
-  align-items: start;
+  align-items: stretch; /* Make both columns equal height */
 }
 
 /* 60/40 split on larger screens (text left 60%, photo right 40%) */
@@ -89,6 +89,13 @@
   }
 }
 
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  height: 100%; /* Fill full height of grid cell */
+}
+
 .about__title {
   font-family: var(--font-heading);
   font-size: var(--font-size-h2);
@@ -102,6 +109,10 @@
   font-size: var(--font-size-body);
   line-height: var(--line-height-relaxed);
   color: var(--color-text-secondary);
+  flex: 1; /* Allow text to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* Evenly distribute paragraphs */
 }
 
 .about__text p {
