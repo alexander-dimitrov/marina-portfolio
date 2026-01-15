@@ -7,11 +7,11 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  max-height: 100vh; /* Prevent hero from extending beyond viewport */
   display: grid;
   place-items: center;
   overflow: hidden;
   background-color: var(--color-bg-cream);
-  border-bottom: 60px solid var(--color-bg-cream); /* Solid barrier to prevent bg bleed */
 }
 
 .hero__background {
