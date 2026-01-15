@@ -16,6 +16,7 @@ export function initNavigation() {
     // Show header after scrolling past hero
     if (currentScrollY > heroHeight * 0.8) {
       header.classList.add('header--visible');
+      console.log('Header should be visible now', currentScrollY, heroHeight);
     } else {
       header.classList.remove('header--visible');
     }

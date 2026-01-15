@@ -70,10 +70,10 @@
   align-items: start;
 }
 
-/* 60/40 split on larger screens */
+/* 40/60 split on larger screens (photo left, text right) */
 @media (min-width: 1024px) {
   .about__grid {
-    grid-template-columns: 60fr 40fr;
+    grid-template-columns: 40fr 60fr;
   }
 }
 
