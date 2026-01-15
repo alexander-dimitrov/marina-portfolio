@@ -59,7 +59,8 @@
    =================================== */
 
 .about {
-  padding: var(--space-2xl) 0; /* 48px top/bottom for tighter fit */
+  padding-top: calc(var(--space-2xl) + 60px); /* 48px + 60px nav height */
+  padding-bottom: var(--space-2xl); /* 48px bottom */
   background-color: var(--color-bg-cream);
   min-height: calc(100vh - 60px); /* Fit in viewport minus nav height */
   display: flex;
